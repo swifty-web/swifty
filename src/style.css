@@ -1,0 +1,36 @@
+body {
+	background-image: url('swiftUI-banner.png') !important;
+	padding: 0;
+	margin: 0;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	display: flex;
+	justify-content: center;
+}
+div#overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	background: rgba(0,0,0, 70%);
+	backdrop-filter: blur(3px);
+	top: 0;
+}
+main {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 20px;
+	background: var(--back-dark);
+	border-radius: var(--border-radius);
+	text-align: center;
+}
+h1 {
+	font-size: 48px;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+h3, h4 {
+	font-weight: normal;
+	color: var(--neutral-color-6);
+}
